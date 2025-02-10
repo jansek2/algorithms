@@ -1,0 +1,16 @@
+import math
+
+def circle_or_square(radius, area):
+    #this finds if the circumference of a circle is bigger than the perimiter of a square or not
+    circ = 2 *3.14*radius
+    #square root of area
+    oneSide = sqrt(area) #This code will only work if import math works
+    per = oneSide*4
+    if per > circ:
+        print("The perimiter is bigger than the circumference")
+        print("The perimiter is: ",per)
+        print("The circumference is: ", circ)
+    else:
+        print("The circumference is bigger than the perimiter")
+        print("The circumference is: ", circ)
+        print("The perimiter is: ",per)
