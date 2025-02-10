@@ -1,0 +1,32 @@
+import time
+#
+#time_amount = input("Give an amount of time (written in form: Hours Minutes Seconds): ")
+#
+#hour, min, sec = time_amount.split()
+#
+#print(hour,min,sec)
+#
+#if int(sec) <= 60:
+#    time.sleep(1)
+#    sec = sec-1
+
+
+time_amount = input("Give an amount of time (written in form: Hours Minutes Seconds): ")
+
+hour, minute, sec = map(int, time_amount.split())
+
+print(hour, minute, sec)
+
+total_seconds = hour * 3600 + minute * 60 + sec
+
+while total_seconds > 0:
+    hours_left = total_seconds // 3600
+    minutes_left = (total_seconds % 3600) // 60
+    seconds_left = total_seconds % 60
+
+    print(f"{hours_left}h {minutes_left}m {seconds_left}s")
+
+    time.sleep(1)
+    total_seconds -= 1
+
+print("Time's up!")
