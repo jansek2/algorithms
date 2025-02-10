@@ -1,0 +1,5 @@
+def vertWrite(text):
+    x = 0
+    for i in range(len(text)):
+        print(text[x])
+        x += 1
