@@ -1,0 +1,7 @@
+def stutter(word):
+    letter1 = word[0]
+    letter2 = word[1]
+    dots = "..."
+    letdots = letter1+letter2+dots
+    mark = "?"
+    print(letdots*2,word,mark)
