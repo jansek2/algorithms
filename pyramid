@@ -1,0 +1,10 @@
+def pyramid (height):
+    space = " "
+    dot = "*"
+    x = 1
+    y = 1
+    for i in range(height):
+        Nheight = height - x
+        print(space*Nheight + dot*y)
+        x = x+1
+        y = y+2
