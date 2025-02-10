@@ -1,0 +1,4 @@
+def dis(price, discount):
+    Ndiscount = (100 - discount)/100
+    Nprice = price*Ndiscount
+    print(Nprice)
